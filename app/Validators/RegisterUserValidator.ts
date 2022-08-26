@@ -1,4 +1,4 @@
-import { schema, CustomMessages } from '@ioc:Adonis/Core/Validator'
+import { schema, rules, CustomMessages } from '@ioc:Adonis/Core/Validator'
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
 export default class RegisterUserValidator {
@@ -49,9 +49,9 @@ export default class RegisterUserValidator {
    * }
    *
    */
-  public messages: CustomMessages = {}
+  public messages: CustomMessages = {
     required: "O {{field}} é obrigatório para se registrar!!!",
     'email.unique': "E-mail já cadastrado!!!",
-    'minLength': "Tamanho de senha inválida"
-  }
+    'minLength': "Tamanho de senha inválida",
+  } 
 }

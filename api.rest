@@ -1,0 +1,18 @@
+##### Registro de usuário
+POST http://127.0.0.1:3333/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Miguel de Castro",
+    "email": "inhoque123@gmail.com",
+    "password": "1234"
+}
+
+##### Autenticação do usuário
+POST http://127.0.0.1:3333/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "inhoque123@gmail.com",
+    "password": "1234"
+}
